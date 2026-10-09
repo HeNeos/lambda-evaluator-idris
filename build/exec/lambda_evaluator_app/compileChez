@@ -1,0 +1,1 @@
+(parameterize ([optimize-level 3] [compile-file-message #f]) (compile-program "/Users/heneos/HeNeos/idris/lambda_evaluator/build/exec/lambda_evaluator_app/lambda_evaluator.ss"))

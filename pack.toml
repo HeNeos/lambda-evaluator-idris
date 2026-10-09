@@ -1,0 +1,10 @@
+[custom.all.lambda_evaluator]
+type = "local"
+path = "."
+ipkg = "lambda_evaluator.ipkg"
+test = "test/test.ipkg"
+
+[custom.all.lambda_evaluator-test]
+type = "local"
+path = "test"
+ipkg = "test.ipkg"
