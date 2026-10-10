@@ -100,3 +100,16 @@ traceReduction fuel expr = do
                   putStrLn
                     (show nextStep ++ ": " ++ pretty next)
                   go nextStep remaining' next
+
+export
+showResult : Nat -> Expr -> IO ()
+showResult fuel expr = do
+  let normal = normalize fuel expr
+  putStrLn ("Normal form: " ++ pretty normal)
+
+  case Church.toNat 2 normal of
+    Just n =>
+      putStrLn ("Result = " ++ show n)
+
+    Nothing =>
+      putStrLn "Result is not a Church numeral."

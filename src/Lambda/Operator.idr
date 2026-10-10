@@ -2,7 +2,6 @@ module Lambda.Operator
 
 import Lambda.Core
 import Lambda.Church
-import Lambda.Combinator
 
 -- λn f x. f (n f x) 
 export
